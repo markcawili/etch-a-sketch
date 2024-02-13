@@ -9,7 +9,7 @@ for (let i = 0; i <= 271; i++) {
 }
 
 function hover(event) {
-    event.target.style.backgroundColor = "tomato";
+    event.target.style.backgroundColor = randomColor();
 }
 
 function squares() {
@@ -45,4 +45,12 @@ function newGrid(num) {
 
 function clearBox() {
     document.querySelector('.container').innerHTML = "";
+}
+
+function randomColor() {
+    var o = Math.round;
+    var r = Math.random;
+    var s = 255
+
+    return 'rgb(' + o(r()*s) + ',' + o(r()*s)+ ',' + o(r()*s)+ ')';
 }
