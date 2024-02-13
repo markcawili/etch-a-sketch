@@ -41,8 +41,8 @@ function newGrid(num) {
         grid.addEventListener("mouseover", hover);
     }
 
-    document.getElementById("grid").style.maxHeight = newWidth.toString();
-    document.getElementById("grid").style.maxHeight = newWidth.toString();
+    // document.getElementById("grid").style.maxHeight = newWidth.toString();
+    // document.getElementById("grid").style.maxHeight = newWidth.toString();
 }
 
 function clearBox() {
